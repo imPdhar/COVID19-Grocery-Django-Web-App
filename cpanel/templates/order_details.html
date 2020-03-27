@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Details</title>
+
+</head>
+<body>
+    <h2 style="text-align: center;">Order Details</h2>
+
+    <form action="/thankyou/" method="POST">{% csrf_token %}
+        Customer Name:
+        <input type="text" name="customername"><br><br>
+        Order Details:
+        <br><textarea rows="10" cols="100" name="shoppinglist">Enter order details</textarea><br><br>
+        Shop Name:
+        <input type="text" name="shopname"><br><br>
+        Phone Number:
+        <input type="text" name="contact"><br><br>
+        E-mail:
+        <input type="text" name="email"><br><br>
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+</html>

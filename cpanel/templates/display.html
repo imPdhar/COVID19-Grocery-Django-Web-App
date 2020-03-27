@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        .centered {
+        position: fixed; /* or absolute */
+        top: 25%;
+        left: 40%;
+}
+    </style>
+</head>
+<body>
+
+<form method="POST" action="/shoplist/">{% csrf_token %}
+<div class="centered" style="text-align: center;">
+        Customer &nbsp;
+         <input type="text" name="loc" placeholder="Enter location">
+         <input type="submit" value="submit" />  
+</form>         
+<br><br>
+         <h3 >OR</h3>
+         <br><br>
+         <input type="button" value="Grocer" onclick="location.href='{% url 'signIn' %}' ">
+    
+</div>
+
+</body>
+</html>

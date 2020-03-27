@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          div{
+              position: fixed;
+              right: 10px;
+              top: 5px;
+          }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" onclick="location.href='{% url 'log' %}'">
+          Logout
+      </button>
+        <button type="button" onclick="location.href='{% url 'prisoners' %}'">Prisoners</button>
+    </div>
+    Welcome {{e}}
+  </body>
+</html>
